@@ -42,7 +42,7 @@ def upload(local_file_name, s3_key=None):
 
 def main():
     img = get_image()
-    if img:
+    if img is not None:
         print("Captured image")
     else:
         print("Failed to get image T_T")
